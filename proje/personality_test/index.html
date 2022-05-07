@@ -1,0 +1,130 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myers-Briggs Personality Test</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="pre-registration center">
+            <button class="giris">Giriş Yap</button>
+            <button class="kayit">Kayıt Ol</button>
+        </div>
+
+        <!-- register -->
+        <div class="log_register center">
+            <div class="user_info">
+                <form action="" for="info_buttons">
+                    <h2>Kullanıcı Adı</h2>
+                    <input type="text" placeholder="Adınız">
+                    <h2>Şifre</h2>
+                    <input type="password" placeholder="Şifreniz">
+                    <h2>E-posta adresi</h2>
+                    <input type="email" placeholder="E-mail">
+                </form>
+                <div class="info_buttons">
+                    <button class="register">Kayıt Ol</button>
+                </div>
+            </div>
+        </div>
+        <!-- Logın -->
+        <div class="log_ın center">
+            <div class="user_info">
+                <form action="" for="info_buttons">
+                    <h2>Kullanıcı Adı</h2>
+                    <input type="text" placeholder="Adınız">
+                    <h2>Şifre</h2>
+                    <input type="password" placeholder="Şifreniz">
+                    <h2>E-posta adresi</h2>
+                    <input type="email" placeholder="E-mail">
+                </form>
+                <div class="info_buttons">
+                    <button class="logIn">Giriş Yap</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- buttons -->
+        <div class="start center">
+            <button>Başla</button>
+        </div>
+
+        <!-- start Quiz button -->
+        <div class="start_btn center"><button><span>Start Test</span> <p></p></button></div>
+
+        <!-- Info Box -->
+        <div class="info_box center">
+            <div class="info-title"><span>Some Directions of this Personality Test</span></div>
+            <div class="info-list">
+                <div class="info">1. There are no <span>Right & Wrong</span> answers to the questions on this inventory.
+                </div>
+                <div class="info">2. Your answers will help to show how you like to look at things and how you like to go about deciding things. </div>
+                <div class="info">3. Read each question carefully and select one of the two choices given, which applies to you, by choosing to either <span>“A” or “B”</span>.</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Exit Test</button>
+                <button class="restart">Continue</button>
+            </div>
+        </div>
+
+
+        <!-- Quiz Box -->
+        <div class="quiz_box center">
+            <header>
+                <div class="title">Myers-Briggs Personality Test</div>
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">20</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="que_text">
+                    <!-- Here I've inserted question from JavaScript -->
+                </div>
+                <div class="option_list">
+                    <!-- Here I've inserted options from JavaScript -->
+                </div>
+            </section>
+
+            <!-- footer of Quiz Box -->
+            <footer>
+                <div class="total_que">
+                    <!-- Here I've inserted Question Count Number from JavaScript -->
+                </div>
+                <button class="next_btn">Next Question</button>
+            </footer>
+        </div>
+
+        <!-- Result Box -->
+        <div class="result_box center">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You've completed the Myers-Briggs Personality Test!</div>
+            <div class="score_text">
+                <!-- Here I've inserted Score Result from JavaScript -->
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Test</button>
+                <button class="quit">Quit Test</button>
+            </div>
+        </div>
+    </div>
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
