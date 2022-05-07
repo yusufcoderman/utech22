@@ -3,8 +3,6 @@ const register = document.querySelector(".register");
 const logIn = document.querySelector(".logIn");
 const pre_reg = document.querySelector(".pre_registration");
 const giris = document.querySelector(".giris");
-const kayit = document.querySelector(".kayit");
-const logContent = document.querySelector(".log_register");
 const log_In = document.querySelector(".log_ın");
 const start_btn = document.querySelector(".start_btn");
 const info_box = document.querySelector(".info_box");
@@ -16,24 +14,18 @@ const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
+const gir = document.getElementById("giris");
 
 
 //giriş kayıt
 giris.onclick = () => {
     log_In.classList.add("activeInfo");
-    pre_reg.classList.add("none");
-}
-kayit.onclick = () => {
-    logContent.classList.add("activeInfo");
 }
 
+//entegre yapılacak
 logIn.onclick = () => {
     start_btn.classList.add("activeInfo");
     log_In.classList.remove("activeInfo");
-}
-register.onclick = () => {
-    start_btn.classList.add("activeInfo");
-    logContent.classList.remove("activeInfo");
 }
 
 // if startQuiz button clicked
